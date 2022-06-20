@@ -1,0 +1,48 @@
+figure.user-team {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+figure.user-team img {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+	object-position: center;
+}
+
+figure.user-team figcaption {
+	background-color: rgba(47, 18, 110, 83%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transition: all .4s ease-in-out;
+	opacity: 0;
+}
+
+figure.user-team figcaption a {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 32px;
+	color: #bcbcbc;
+	transition: all .4s ease-in-out;
+}
+
+figure.user-team:hover figcaption {
+	opacity: 1;
+}
+
+figure.user-team:hover figcaption a {
+	color: #ffffff;
+}
+
+div.user-name {
+	color: #616668;
+	font-weight: 600;
+}
